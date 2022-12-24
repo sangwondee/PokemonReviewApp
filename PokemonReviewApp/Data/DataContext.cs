@@ -18,7 +18,7 @@ public class DataContext : DbContext
         options.UseNpgsql(Configuration.GetConnectionString("WebApiDatabase"));
     }
     
-    
+    // test6 git
     // public DbSet<Category> Categories { get; set; }
     // public DbSet<Country> Countries { get; set; }
     // public DbSet<Owner> Owners { get; set; }
