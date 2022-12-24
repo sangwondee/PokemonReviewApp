@@ -1,0 +1,32 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:30537",
+      "sslPort": 44384
+    }
+  },
+  "profiles": {
+    "PokemonReviewApp": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7078;http://localhost:5044",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "POSTGRES_CONNECTION_STRING": "Host=localhost; Port=5432; User ID=postgres; Password=1234; Database=pokemonreview; Pooling=true; Connection Idle Lifetime=10; Minimum Pool Size=2; Maximum Pool Size=50;"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
