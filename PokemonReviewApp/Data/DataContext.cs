@@ -28,7 +28,6 @@ public class DataContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        // PokemonCategory
         modelBuilder.Entity<PokemonCategory>()
             .HasKey(pc => new { pc.PokemonId, pc.CategoryId });
         modelBuilder.Entity<PokemonCategory>()
@@ -39,8 +38,7 @@ public class DataContext : DbContext
             .HasOne(p => p.Category)
             .WithMany(pc => pc.PokemonCategories)
             .HasForeignKey(c => c.CategoryId);
-        
-        // PokemonOwner
+
         modelBuilder.Entity<PokemonOwner>()
             .HasKey(po => new { po.PokemonId, po.OwnerId });
         modelBuilder.Entity<PokemonOwner>()
