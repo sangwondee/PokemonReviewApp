@@ -13,15 +13,14 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<Seed>();
 builder.Services.AddDbContext<DataContext>(options =>
 {
-    options.UseNpgsql(builder.Configuration.GetConnectionString("WebApiDatabase"));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("WebApiDatabase") ?? string.Empty);
 });
 
 var app = builder.Build();
 
 if (args.Length == 1 && args[0].ToLower() == "seeddata")
-{
     SeedData(app);
-}
+
 
 void SeedData(IHost app)
 {

@@ -5,14 +5,14 @@ namespace PokemonReviewApp
 {
     public class Seed
     {
-        private readonly DataContext dataContext;
+        private readonly DataContext _dataContext;
         public Seed(DataContext context)
         {
-            this.dataContext = context;
+            this._dataContext = context;
         }
         public void SeedDataContext()
         {
-            if (!dataContext.PokemonOwners.Any())
+            if (!_dataContext.PokemonOwners.Any())
             {
                 var pokemonOwners = new List<PokemonOwner>()
                 {
@@ -110,8 +110,8 @@ namespace PokemonReviewApp
                         }
                     }
                 };
-                dataContext.PokemonOwners.AddRange(pokemonOwners);
-                dataContext.SaveChanges();
+                _dataContext.PokemonOwners.AddRange(pokemonOwners);
+                _dataContext.SaveChanges();
             }
         }
     }
