@@ -40,6 +40,6 @@ public class PokemonRepository : IPokemonRepository
 
     public bool PokemonExists(int pokeId)
     {
-        throw new NotImplementedException();
+        return _context.Pokemon.Any(p => p.Id == pokeId);
     }
 }

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "MnUCt/Nsi+6z2kdIfdUzAoa6zqz5eK74UpmIUCobrOUMfMjPQHXDaRUC/K7TA1eDF1LH2+X+RjXV7y7WdXQVJw==",
+  "dgSpecHash": "PXbTKstg5PQxpZXu0RMHK6rwguPgVDxVFXLreMNyf7OpDemjHWtoOKEW6DapwyZTpFSZo1Xb7z2XVA+4ESyHXw==",
   "success": true,
   "projectFilePath": "/Users/sangwondee/Projects/PokemonReviewApp/PokemonReviewApp/PokemonReviewApp.csproj",
   "expectedPackageFiles": [
+    "/Users/sangwondee/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
+    "/Users/sangwondee/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "/Users/sangwondee/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/sangwondee/.nuget/packages/microsoft.aspnetcore.jsonpatch/6.0.11/microsoft.aspnetcore.jsonpatch.6.0.11.nupkg.sha512",
     "/Users/sangwondee/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/6.0.11/microsoft.aspnetcore.mvc.newtonsoftjson.6.0.11.nupkg.sha512",
