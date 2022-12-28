@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sangwondee/Projects/PokemonReviewApp/PokemonReviewApp/PokemonReviewApp.csproj": {}
+    "C:\\Projects\\PokemonReviewApp\\PokemonReviewApp\\PokemonReviewApp.csproj": {}
   },
   "projects": {
-    "/Users/sangwondee/Projects/PokemonReviewApp/PokemonReviewApp/PokemonReviewApp.csproj": {
+    "C:\\Projects\\PokemonReviewApp\\PokemonReviewApp\\PokemonReviewApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sangwondee/Projects/PokemonReviewApp/PokemonReviewApp/PokemonReviewApp.csproj",
+        "projectUniqueName": "C:\\Projects\\PokemonReviewApp\\PokemonReviewApp\\PokemonReviewApp.csproj",
         "projectName": "PokemonReviewApp",
-        "projectPath": "/Users/sangwondee/Projects/PokemonReviewApp/PokemonReviewApp/PokemonReviewApp.csproj",
-        "packagesPath": "/Users/sangwondee/.nuget/packages/",
-        "outputPath": "/Users/sangwondee/Projects/PokemonReviewApp/PokemonReviewApp/obj/",
+        "projectPath": "C:\\Projects\\PokemonReviewApp\\PokemonReviewApp\\PokemonReviewApp.csproj",
+        "packagesPath": "C:\\Users\\sgngl\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\PokemonReviewApp\\PokemonReviewApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/sangwondee/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sgngl\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
