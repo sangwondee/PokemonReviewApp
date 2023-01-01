@@ -30,4 +30,33 @@ public class CategoryController : Controller
         return Ok(categories);
     }
     
+    [HttpGet("{categoryId}")]
+    [ProducesResponseType(200, Type = typeof(IEnumerable<Category>))]
+    [ProducesResponseType(400)]
+    public IActionResult GetCategoryById(int categoryId)
+    {
+        if (!_categoryRepository.CategoryExists(categoryId))
+            return NotFound();
+        
+        var category = _mapper.Map<CategoryDto>(_categoryRepository.GetCategory(categoryId));
+
+        if (!ModelState.IsValid) return BadRequest(ModelState);
+        
+        return Ok(category);
+    }
+    
+    [HttpGet("pokemon/{categoryId}")]
+    [ProducesResponseType(200, Type = typeof(IEnumerable<Pokemon>))]
+    [ProducesResponseType(400)]
+    public IActionResult GetPokemonByCategory(int categoryId)
+    {
+        if (!_categoryRepository.CategoryExists(categoryId))
+            return NotFound();
+        
+        var pokemons = _mapper.Map<List<PokemonDto>>(_categoryRepository.GetPokemonByCategory(categoryId));
+        
+        if (!ModelState.IsValid) return BadRequest(ModelState);
+        
+        return Ok(pokemons);
+    }
 }
