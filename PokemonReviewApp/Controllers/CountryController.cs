@@ -45,9 +45,9 @@ public class CountryController : Controller
         return Ok(country);
     }
     
-    [HttpGet("/owners/owner/{ownerId}")]
-    [ProducesResponseType(200, Type = typeof(IEnumerable<Country>))]
+    [HttpGet("/owners/{ownerId}")]
     [ProducesResponseType(400)]
+    [ProducesResponseType(200, Type = typeof(IEnumerable<Country>))]
     public IActionResult GetCountryByOwnerId(int ownerId)
     {
         var country = _mapper.Map<CountryDto>(_countryRepository.GetCountryByOwner(ownerId));
@@ -56,5 +56,4 @@ public class CountryController : Controller
         
         return Ok(country);
     }
-    
 }
